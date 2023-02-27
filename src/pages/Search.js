@@ -61,7 +61,7 @@ class Search extends React.Component {
       <div data-testid="page-search" className='search-container'>
         <Header />
         {loading ? <Loading /> : (
-          <div className='search-top-box'>
+          <div className='search-top-box container'>
           <div className='search-box'>
             <ion-icon name="search-outline" className="search-icon"></ion-icon>
             <label htmlFor="search">
