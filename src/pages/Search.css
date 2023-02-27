@@ -1,0 +1,125 @@
+.search-container {
+  background-color: #131316;
+  max-width: 120rem;
+  margin: 0 auto;
+  min-height: 80rem;
+}
+
+ion-icon {
+  color: #EDF2F4;
+  font-size: 2.4rem;
+}
+
+.search-top-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #2B2D42;
+
+  padding: 0 0 0 4rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  align-content:center;
+  height: 7rem;
+  gap: 1.4rem;
+}
+
+.input-search {
+  width: 24rem;
+  background-color: #2B2D42;
+  height: 3.6rem;
+  border-radius: 10px;
+  color: #8D99AE;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  /* box-shadow: 0 1.4rem 1.8rem rgba(0, 0, 0, 0.2); */
+}
+
+.input-search:focus {
+  border: 1px solid #D90429;
+}
+
+.button-search {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  height: 3.6rem;
+}
+
+label {
+  padding-top: 0;
+}
+
+.search-profile-box {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding-right: 3rem;
+}
+
+.search-avatar {
+  width: 5rem;
+  border-radius: 10rem;
+}
+
+.search-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-top: 5rem;
+  color: #D90429;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.search-grip-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  padding: 0 3rem;
+}
+
+.search-name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+    height: 3.8rem;
+      color: #EDF2F4;
+  font-weight: 400;
+}
+
+.search-name:hover,
+.search-name:active {
+  color: #8D99AE;
+}
+
+.search-profile-name {
+  color: #EDF2F4;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.search-image {
+  width: 15rem;
+  border: 2px solid #2B2D42;
+  margin-bottom: 6rem;
+}
+
+.album-container {
+  display:grid;
+  justify-items: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.desaturate {
+  filter: grayscale(100);
+}

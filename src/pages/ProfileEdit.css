@@ -1,0 +1,31 @@
+.profile-edit-container {
+  background-color: #131316;
+  max-width: 120rem;
+  margin: auto;
+  min-height: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-edit {
+  margin-left: 3rem;
+}
+
+.edit-img {
+  height: 75rem;
+  border-radius: 10px;
+  margin-left: 3rem;
+}
+
+.input-profile-edit {
+  width: 30rem;
+  background-color: #2B2D42;
+  height: 3.6rem;
+  border-radius: 10px;
+  color: #8D99AE;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  /* box-shadow: 0 1.4rem 1.8rem rgba(0, 0, 0, 0.2); */
+}

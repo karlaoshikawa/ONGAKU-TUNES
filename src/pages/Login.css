@@ -1,0 +1,141 @@
+.container-login-page {
+  /* position: relative; */
+  height: 100vh;
+}
+ 
+.login .footer {
+  display: none !important;
+}
+
+.login-container {
+  background-color: #131316;
+  /* width: 100%;
+  height: 100%; */
+  /* display: flex;
+  justify-content: flex-start; */
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.boy-img {
+  height: 100vh;
+  justify-self: start;
+  width: 100%;
+  object-fit: cover;
+}
+
+.login-box {
+  width: 24vw;
+  /* border: 2px solid red; */
+  /* position: relative; */
+  /* align-content: center; */
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 20rem;
+  padding-top: 30%;
+}
+
+.text-logo {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 4rem;
+  padding-top: 2rem;
+  color: #D90429;
+}
+
+.form-box {
+  margin-top: 8rem;
+  border: 1px solid #D90429;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(178, 170, 174, 0.1);
+  -webkit-box-shadow:0px 0px 21px 0px rgba(205,207,206,0.41);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(205,207,206,0.41);
+  box-shadow: 0px 0px 21px 0px rgba(205,207,206,0.21);
+  border-radius: 10px;
+  padding: 4rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: #8D99AE;
+} 
+
+textarea:focus, input:focus, input, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.input-login {
+  margin-top: 0.5rem;
+  background-color: #2B2D42;
+  height: 3.6rem;
+  border-radius: 10px;
+  color: #8D99AE;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  box-shadow: 0 1.4rem 1.8rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.input-login:focus {
+  border: 1px solid #D90429;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+.button-login {
+  margin-top: 3.5rem;
+  font-size: 2rem;
+  height: 4.5rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+button,
+button:link,
+button:visited {
+  display: inline-block;
+  background-color: #D90429;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 10px;
+ 
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+

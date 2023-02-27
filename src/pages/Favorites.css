@@ -1,0 +1,16 @@
+.favorites-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-top: 5rem;
+  color: #D90429;
+  padding-left: 8rem;
+  padding-bottom: 3rem;
+}
+
+.favorite-container {
+  max-width: 120rem;
+  min-height: 80rem;
+  margin: 0 auto;
+  background-color: #131316;
+}

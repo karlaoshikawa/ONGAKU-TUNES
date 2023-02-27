@@ -1,0 +1,22 @@
+.header.custom-loader {
+  margin-bottom: 5rem;
+}
+
+.custom-loader {
+  width:45px;
+  height:40px;
+  --c:linear-gradient(#D90429 0 0);
+  background: 
+    var(--c) 0%   100%,
+    var(--c) 50%  100%,
+    var(--c) 100% 100%;
+  background-size:9px 100%;
+  background-repeat: no-repeat;
+  animation:b2 1s infinite linear;
+}
+@keyframes b2 {
+    20% {background-size:9px 60% ,9px 100%,9px 100%}
+    40% {background-size:9px 80% ,9px 60% ,9px 100%}
+    60% {background-size:9px 100%,9px 80% ,9px 60% }
+    80% {background-size:9px 100%,9px 100%,9px 80% }
+}
