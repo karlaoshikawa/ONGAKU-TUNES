@@ -1,12 +1,15 @@
 .header-component {
   background-color: #D90429;
+  height: 9.6rem;
 }
 
-.container {
+.header-container {
+  max-width: 120rem;
   margin: 0 auto;
   height: 9.6rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 } 
 
 .link-container {

@@ -27,7 +27,7 @@ class Header extends React.Component {
     // const { user, loading } = this.state;
     return (
       <header className="header-component">
-        <div className="header-container container">
+        <div className="header-container ">
           
             <Link className="logo-box-header" to="/search">
             <img className="logo-header" src={logo} alt="Ongaku Tunes Logo" />
