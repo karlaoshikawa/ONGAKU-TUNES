@@ -96,7 +96,7 @@ class Search extends React.Component {
         {((albumList.length > 0)) ? (
           <>
             <h2 className='search-title'>{`Resultado de álbuns de: ${artista}`}</h2>
-            <div className='search-grip-container'>
+            <div className='search-grip-container container'>
             {albumList.map((e) => (
               <Link
                 key={ e.collectionId }
