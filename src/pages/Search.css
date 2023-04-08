@@ -75,7 +75,7 @@ label {
   text-align: center;
 }
 
-.search-grip-container {
+.search-grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
@@ -122,4 +122,23 @@ label {
 
 .desaturate {
   filter: grayscale(100);
+}
+
+/**************************/
+/* BELOW 1000px (Landscape Tablets) */
+/**************************/
+@media (max-width: 63em) {
+  .profile-edit-container {
+    margin-top: -4.5rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+.search-profile-name {
+display: none;
+}
 }

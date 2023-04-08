@@ -1,5 +1,4 @@
 .profile-container {
-  background-color: #131316;
   max-width: 120rem;
   margin: 0 auto;
   min-height: 80rem;
@@ -24,7 +23,7 @@
   border: 2px solid #D90429;
 }
 
-.profile-box {;
+.profile-box {
   border: 1px solid #D90429;
   display: flex;
   flex-direction: column;
@@ -33,7 +32,7 @@
   -moz-box-shadow: 0px 0px 21px 0px rgba(205,207,206,0.41);
   box-shadow: 0px 0px 21px 0px rgba(205,207,206,0.21);
   border-radius: 10px;
-  padding: 4rem;
+  padding: 04rem;
   width: 50rem;
   height:75rem;
   margim-left: 2rem;
@@ -72,4 +71,58 @@
 .line {
   border-bottom: 1px solid #8D99AE;
   
+}
+
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  .profile-container {
+    margin-top: -3.5rem;
+  }
+}
+
+/**************************/
+/* BELOW 1000px (Landscape Tablets) */
+/**************************/
+@media (max-width: 63em) {
+  .profile-container {
+    margin-top: -4.5rem;
+  }
+
+  .profile-box {
+    max-width: 42rem;
+    max-height: 78vh;
+    margim-left: 0;
+  }
+
+  .girl-music {
+    max-height: 78vh;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+.girl-music {
+  display: none;
+}
+
+.profile-box {
+  border: 1px solid #D90429;
+  display: flex;
+  flex-direction: column;
+  width: 100rem;
+  height:75rem;
+  margim-left: 2rem;
+  margin: 8vh 0;
+}
+
+.girl-music-box{
+  display: none;
+}
+
 }

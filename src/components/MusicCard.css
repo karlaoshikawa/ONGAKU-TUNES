@@ -117,3 +117,18 @@ display: block;
  color: #D90429;
  margin-left: 1rem;
 }
+
+/**************************/
+/* BELOW 1000px (Landscape Tablets) */
+/**************************/
+@media (max-width: 63em) {
+  .music-card-container {
+
+  }
+
+  .favorite-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

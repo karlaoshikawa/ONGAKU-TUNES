@@ -61,8 +61,8 @@ class Favorites extends React.Component {
         {!loading && (
           <div className='favorite-container'>
           <div className='favorites-title'>Favorites</div>
-          <div className='favorite-search-container'>
-            {best.map((fav, ) => (
+            <div className='favorite-search-container'>
+            {(best.length === 0) ? <h2>Your list of favorite songs seems to be empty, add your favorite songs!</h2> : best.map((fav, ) => (
               <MusicCard
               { ...fav }
               checked={ checked }

@@ -58,3 +58,45 @@
   font-weight: 400;
   font-size: 3.6rem;
 }
+
+/**************************/
+/* BELOW 1000px (Landscape Tablets) */
+/**************************/
+@media (max-width: 63em) {
+  .logo-header {
+    margin-left: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+.link-container {
+  gap: 1rem;
+}
+
+.header-link {
+  padding-right: 1.5rem;
+}
+
+.logo-name {
+  font-size: 3rem;
+}
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+.logo-name {
+  margin-left: -1rem;
+  max-width: 4rem;
+}
+
+.last-link {
+  padding-right: 3rem;
+}
+}

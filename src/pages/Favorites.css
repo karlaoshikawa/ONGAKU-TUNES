@@ -10,7 +10,16 @@
 
 .favorite-container {
   max-width: 120rem;
-  min-height: 80rem;
   margin: 0 auto;
   background-color: #131316;
+}
+
+/**************************/
+/* BELOW 1000px (Landscape Tablets) */
+/**************************/
+@media (max-width: 63em) {
+  .favorite-container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }

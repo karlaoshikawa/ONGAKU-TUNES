@@ -45,7 +45,7 @@ class Header extends React.Component {
               <div className="header-link">Favorites</div>
             </Link>
             <Link to="/profile" data-testid="link-to-profile">
-              <div className="header-link">Profile</div>
+              <div className="header-link last-link">Profile</div>
             </Link>
           </div>
         </div>
