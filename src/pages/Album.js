@@ -69,22 +69,28 @@ class Album extends React.Component {
     return (
       <div data-testid="page-album">
         <Header />
-        {loading ? <Loading /> : (
-          <div className='search-container'>
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="favorite-container">
             <div>
-            <h2 className='search-title'>{album.artistName} - {album.collectionName}</h2>
-            {/* <img className="album-img" src={ album.artworkUrl100 } alt="" /> */}
-            {/* <h3 className="album-name">{album.collectionName}</h3> */}
+              <h2 className="search-title">
+                {album.artistName} - {album.collectionName}
+              </h2>
+              {/* <img className="album-img" src={ album.artworkUrl100 } alt="" /> */}
+              {/* <h3 className="album-name">{album.collectionName}</h3> */}
             </div>
-            <div className='favorite-search-container'>
-            {music.map((item) => (<MusicCard
-              key={ item.trackName }
-              { ...item }
-              checked={ this.checkedOk(item) }
-              favorita={ this.favorita }
-            />))}
+            <div className="favorite-search-container">
+              {music.map((item) => (
+                <MusicCard
+                  key={item.trackName}
+                  {...item}
+                  checked={this.checkedOk(item)}
+                  favorita={this.favorita}
+                />
+              ))}
             </div>
-            </div>
+          </div>
         )}
         <Footer />
       </div>

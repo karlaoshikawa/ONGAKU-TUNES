@@ -132,3 +132,26 @@ display: block;
     align-items: center;
   }
 }
+
+/**************************/
+/* BELOW 414px (iphone 8Plus) */
+/**************************/
+@media (max-width: 26em) {
+
+  .music-card-container {
+  max-width: 46rem; 
+  padding: 3rem 0 3rem 0rem;
+  display:flex;
+  gap: 2rem;
+  align-items: center;
+  border-bottom: 1px solid #2B2D42;
+}
+
+.album-img {
+  width: 10rem;
+}
+
+audio {
+  width: 20rem;
+}
+}

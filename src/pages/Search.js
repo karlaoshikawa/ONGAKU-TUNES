@@ -58,58 +58,80 @@ class Search extends React.Component {
   render() {
     const { loading, albumList, artista, btnDisable, frase, profile, favorite } = this.state;
     return (
-      <div data-testid="page-search" className='search-container'>
+      <div data-testid="page-search" className="search-container">
         <Header />
-        {loading ? <Loading /> : (
-          <div className='search-top-box container'>
-          <div className='search-box'>
-            <ion-icon name="search-outline" className="search-icon"></ion-icon>
-            <label htmlFor="search">
-              <input
-                id="search"
-                className='input-search'
-                name="search"
-                type="text"
-                data-testid="search-artist-input"
-                onChange={this.handleInput}
-              // value={search}
-              />
-            </label>
-            <button
-              type="button"
-              className='button-search'
-              data-testid="search-artist-button"
-              disabled={ btnDisable }
-              onClick={ this.searchAlbunsAndArtist }
-            >
-              Search
-            </button>
-            </div>
-            <div className='search-profile-box'>
-              <p className='search-profile-name'>{profile.name}</p>
-              {profile.image ? <img className='search-avatar' src={profile.image} alt={profile.name} /> :
-                <img className='search-avatar desaturate' src={logo} alt="sem imagem de profile" /> }
-            </div>
-            </div>
-        )}
-        {favorite && < Favorites />}
-        {((albumList.length > 0)) ? (
-          <>
-            <h2 className='search-title'>{`Resultado de álbuns de: ${artista}`}</h2>
-            <div className='search-grid-container container'>
-            {albumList.map((e) => (
-              <Link
-                key={ e.collectionId }
-                to={`/album/${e.collectionId}`}
-                className='album-container'
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="search-top-box container">
+            <div className="search-box">
+              <ion-icon
+                name="search-outline"
+                className="search-icon"
+              ></ion-icon>
+              <label htmlFor="search">
+                <input
+                  id="search"
+                  className="input-search"
+                  name="search"
+                  type="text"
+                  data-testid="search-artist-input"
+                  onChange={this.handleInput}
+                  // value={search}
+                />
+              </label>
+              <button
+                type="button"
+                className="button-search"
+                data-testid="search-artist-button"
+                disabled={btnDisable}
+                onClick={this.searchAlbunsAndArtist}
               >
-                <p className='search-name'>{e.collectionName}</p>
-                <img  className='search-image' src={ e.artworkUrl100 } alt="" />
-              </Link>
-            ))}
-              </div>
+                Search
+              </button>
+            </div>
+            <div className="search-profile-box">
+              <p className="search-profile-name">{profile.name}</p>
+              {profile.image ? (
+                <img
+                  className="search-avatar"
+                  src={profile.image}
+                  alt={profile.name}
+                />
+              ) : (
+                <img
+                  className="search-avatar desaturate"
+                  src={logo}
+                  alt="sem imagem de profile"
+                />
+              )}
+            </div>
+          </div>
+        )}
+        {favorite && <Favorites />}
+        {albumList.length > 0 ? (
+          <>
+            <h2 className="search-title">{`Resultado de álbuns de: ${artista}`}</h2>
+            <div className="search-grid-container container">
+              {albumList.map((e) => (
+                <Link
+                  key={e.collectionId}
+                  to={`/album/${e.collectionId}`}
+                  className="album-container"
+                >
+                  <p className="search-name">{e.collectionName}</p>
+                  <img className="search-image" src={e.artworkUrl100} alt="" />
+                </Link>
+              ))}
+            </div>
           </>
-        ) : (frase && <p>Nenhum álbum foi encontrado</p>)}
+        ) : (
+          frase && (
+            <div className='h2-container'>
+              <h2>Nenhum álbum foi encontrado</h2>
+            </div>
+          )
+        )}
         <Footer />
       </div>
     );
