@@ -146,4 +146,15 @@ label {
 .search-profile-name {
 display: none;
 }
+
+.search-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  /* padding: 0 3rem; */
+}
+
+.search-avatar {
+  display: none;
+}
 }
